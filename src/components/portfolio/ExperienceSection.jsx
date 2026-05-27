@@ -7,9 +7,9 @@ const experiences = [
     role: "Software Engineer",
     company: "Tallen Tech",
     url: "https://tallen.tech/",
-    period: "2023 — Present",
+    period: "2023  Present",
     type: "Co-Founder & Engineer",
-    description: "Co-founded a web development agency delivering custom digital solutions to businesses, NGOs, schools, and startups. 150+ projects shipped, 100+ satisfied clients — zero templates, all handcrafted code.",
+    description: "Co-founded a web development agency delivering custom digital solutions to businesses, NGOs, schools, and startups. 150+ projects shipped, 100+ satisfied clients  zero templates, all handcrafted code.",
     achievements: [
       "Delivered 150+ custom web projects",
       "Built scalable React & Next.js applications",
@@ -22,9 +22,9 @@ const experiences = [
     role: "Full-Stack Developer",
     company: "Farmsell",
     url: "https://farmsell.org",
-    period: "2023 — Present",
+    period: "2023  Present",
     type: "Core Engineer",
-    description: "Built the full Farmsell agricultural marketplace platform from scratch — eliminating middlemen and connecting farmers directly to buyers across East Africa. Helped reduce post-harvest losses by 15%.",
+    description: "Built the full Farmsell agricultural marketplace platform from scratch  eliminating middlemen and connecting farmers directly to buyers across East Africa. Helped reduce post-harvest losses by 15%.",
     achievements: [
       "500+ verified buyers onboarded",
       "15% reduction in post-harvest losses",
@@ -37,7 +37,7 @@ const experiences = [
     role: "Frontend Developer",
     company: "Freelance",
     url: null,
-    period: "2022 — 2023",
+    period: "2022  2023",
     type: "Independent Contractor",
     description: "Delivered responsive, high-performance websites and web apps for local businesses and startups in Uganda. Built strong foundations in React, modern CSS, and deployment workflows.",
     achievements: [

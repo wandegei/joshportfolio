@@ -13,7 +13,7 @@ const highlights = [
   {
     icon: Code2,
     title: "Clean Code",
-    desc: "Writing maintainable, well-structured code that scales — built on SOLID principles and modern best practices.",
+    desc: "Writing maintainable, well-structured code that scales  built on SOLID principles and modern best practices.",
   },
   {
     icon: Zap,
@@ -23,7 +23,7 @@ const highlights = [
   {
     icon: Globe,
     title: "Full-Stack Vision",
-    desc: "From backend APIs and database design to pixel-perfect frontends — I handle the full delivery pipeline.",
+    desc: "From backend APIs and database design to pixel-perfect frontends  I handle the full delivery pipeline.",
   },
 ];
 
@@ -68,14 +68,14 @@ export default function AboutSection({ aboutImage }) {
               I'm <span className="text-foreground font-semibold">Joshua Wandegei</span>, a software 
               engineer based in Wakiso, Uganda, passionate about building web applications that 
               solve real-world problems. I specialize in React, Next.js, TypeScript, Node.js, 
-              and Supabase — delivering end-to-end solutions from concept to deployment.
+              and Supabase  delivering end-to-end solutions from concept to deployment.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-10">
-              I co-built <span className="text-primary font-semibold">Farmsell</span> — an 
+              I co-built <span className="text-primary font-semibold">Farmsell</span>  an 
               agricultural marketplace transforming how farmers sell their produce across East Africa 
-              — and <span className="text-primary font-semibold">Tallen Tech</span>, a web development 
+               and <span className="text-primary font-semibold">Tallen Tech</span>, a web development 
               agency delivering custom digital solutions. I believe great software should be 
-              invisible — intuitive, fast, and reliable.
+              invisible  intuitive, fast, and reliable.
             </p>
 
             {/* Stats */}

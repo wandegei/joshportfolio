@@ -41,7 +41,7 @@ export default function HeroSection({ heroImage }) {
 
   return (
     <section id="hero" className="relative min-h-screen w-full flex flex-col justify-center overflow-hidden bg-background">
-      {/* Ambient glows — reduced blur for perf */}
+      {/* Ambient glows  reduced blur for perf */}
       <div className="absolute top-[-20%] left-[-10%] w-[50vw] h-[50vw] bg-primary/8 blur-[120px] rounded-full pointer-events-none animate-pulse-glow will-change-auto" />
       <div className="absolute bottom-[-15%] right-[-10%] w-[35vw] h-[35vw] bg-accent/5 blur-[100px] rounded-full pointer-events-none" />
 
@@ -124,7 +124,7 @@ export default function HeroSection({ heroImage }) {
           className="max-w-xl text-base md:text-lg text-muted-foreground leading-relaxed mb-10"
         >
           Software engineer specializing in <span className="text-foreground font-medium">React, Next.js, TypeScript & Node.js</span>.
-          I co-built <span className="text-primary font-medium">Farmsell</span> — an agri-marketplace serving East Africa — 
+          I co-built <span className="text-primary font-medium">Farmsell</span>  an agri-marketplace serving East Africa  
           and run <span className="text-primary font-medium">Tallen Tech</span>, a web dev agency with 150+ projects delivered.
         </motion.p>
 

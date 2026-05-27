@@ -6,7 +6,7 @@ const posts = [
   {
     slug: "building-farmsell",
     title: "How We Built Farmsell: Lessons from an AgriTech Marketplace",
-    excerpt: "From idea to 500+ users — the architecture decisions, mistakes, and wins from building a full-stack agricultural platform for East Africa.",
+    excerpt: "From idea to 500+ users  the architecture decisions, mistakes, and wins from building a full-stack agricultural platform for East Africa.",
     date: "2024-03-10",
     readTime: "8 min read",
     tags: ["React", "Supabase", "Architecture"],
@@ -17,7 +17,7 @@ const posts = [
   {
     slug: "react-performance",
     title: "10 React Performance Tricks That Actually Matter",
-    excerpt: "Lazy loading, memoization, bundle splitting — I break down the optimizations that gave our production app a 60% faster load time.",
+    excerpt: "Lazy loading, memoization, bundle splitting  I break down the optimizations that gave our production app a 60% faster load time.",
     date: "2024-02-18",
     readTime: "6 min read",
     tags: ["React", "Performance", "TypeScript"],
@@ -28,7 +28,7 @@ const posts = [
   {
     slug: "freelancing-uganda",
     title: "Freelancing as a Software Engineer in Uganda: My First Year",
-    excerpt: "Landing international clients, pricing your work, managing timezones — the unfiltered reality of tech freelancing from East Africa.",
+    excerpt: "Landing international clients, pricing your work, managing timezones  the unfiltered reality of tech freelancing from East Africa.",
     date: "2024-01-05",
     readTime: "5 min read",
     tags: ["Career", "Freelancing", "Africa"],
@@ -39,7 +39,7 @@ const posts = [
   {
     slug: "supabase-vs-firebase",
     title: "Supabase vs Firebase: Which One for Your Next Project?",
-    excerpt: "I've shipped production apps on both. Here's an honest comparison of pricing, DX, and scaling — so you can make the right call.",
+    excerpt: "I've shipped production apps on both. Here's an honest comparison of pricing, DX, and scaling  so you can make the right call.",
     date: "2023-12-12",
     readTime: "7 min read",
     tags: ["Supabase", "Firebase", "Backend"],
@@ -119,7 +119,7 @@ export default function BlogSection() {
           className="mt-10 text-center"
         >
           <p className="font-mono text-xs text-muted-foreground">
-            More articles coming soon — follow me on{" "}
+            More articles coming soon  follow me on{" "}
             <a href="https://www.linkedin.com/in/wandegei-joshua-8284b9247/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">LinkedIn</a>
             {" "}for updates.
           </p>
