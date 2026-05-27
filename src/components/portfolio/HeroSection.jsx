@@ -50,12 +50,10 @@ export default function HeroSection() {
       id="hero"
       className="relative min-h-screen overflow-hidden bg-background"
     >
-      {/* BACKGROUND LIGHTS */}
-      <div className="absolute top-[-15%] left-[-10%] w-[45rem] h-[45rem] bg-primary/10 blur-[140px] rounded-full pointer-events-none" />
+      {/* BACKGROUND GLOWS */}
+      <div className="absolute top-[-15%] left-[-10%] w-[40rem] h-[40rem] bg-primary/10 blur-[120px] rounded-full pointer-events-none" />
 
-      <div className="absolute bottom-[-20%] right-[-10%] w-[35rem] h-[35rem] bg-accent/10 blur-[120px] rounded-full pointer-events-none" />
-
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/10 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute bottom-[-20%] right-[-10%] w-[30rem] h-[30rem] bg-accent/10 blur-[100px] rounded-full pointer-events-none" />
 
       {/* GRID */}
       <div
@@ -69,10 +67,10 @@ export default function HeroSection() {
         }}
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-8 pt-32 pb-24 lg:pt-36">
-        <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 md:px-8 pt-24 sm:pt-28 lg:pt-36 pb-20">
+        <div className="grid lg:grid-cols-2 gap-14 xl:gap-24 items-center">
           {/* LEFT SIDE */}
-          <div>
+          <div className="order-2 lg:order-1">
             {/* BADGE */}
             <motion.div
               initial={{ opacity: 0, y: -10 }}
@@ -82,40 +80,43 @@ export default function HeroSection() {
                 inline-flex
                 items-center
                 gap-2
-                px-5
-                py-2.5
+                px-4
+                py-2
                 rounded-full
                 border
                 border-primary/20
                 bg-primary/10
                 backdrop-blur-xl
-                mb-8
+                mb-6
               "
             >
               <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
 
-              <span className="font-mono text-[11px] tracking-[0.2em] uppercase text-primary">
+              <span className="font-mono text-[10px] sm:text-[11px] tracking-[0.15em] uppercase text-primary">
                 Available for new projects
               </span>
             </motion.div>
 
             {/* HEADING */}
-            <div className="mb-8">
-              <motion.h1
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{
-                  delay: 0.1,
-                  duration: 0.7,
-                  ease: [0.16, 1, 0.3, 1],
-                }}
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                delay: 0.1,
+                duration: 0.7,
+                ease: [0.16, 1, 0.3, 1],
+              }}
+              className="mb-6"
+            >
+              <h1
                 className="
-                  leading-[0.88]
+                  leading-[0.9]
                   font-black
                   tracking-[-0.05em]
-                  text-[4.2rem]
-                  sm:text-[5.5rem]
-                  lg:text-[6.2rem]
+                  text-[2.8rem]
+                  xs:text-[3.2rem]
+                  sm:text-[4.5rem]
+                  lg:text-[6rem]
                 "
               >
                 <span className="block text-foreground">
@@ -125,20 +126,21 @@ export default function HeroSection() {
                 <span className="block text-gradient">
                   WANDEGEI
                 </span>
-              </motion.h1>
-            </div>
+              </h1>
+            </motion.div>
 
             {/* ROLE */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.45 }}
-              className="mb-7"
+              className="mb-5 min-h-[32px]"
             >
               <span
                 className="
                   font-mono
-                  text-lg
+                  text-sm
+                  sm:text-lg
                   md:text-2xl
                   font-semibold
                   bg-gradient-to-r
@@ -150,7 +152,7 @@ export default function HeroSection() {
               >
                 {displayed}
 
-                <span className="inline-block w-[2px] h-5 md:h-6 bg-primary ml-1 animate-pulse align-middle" />
+                <span className="inline-block w-[2px] h-4 sm:h-5 md:h-6 bg-primary ml-1 animate-pulse align-middle" />
               </span>
             </motion.div>
 
@@ -159,11 +161,14 @@ export default function HeroSection() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.55 }}
-              className="flex items-center gap-2 mb-9"
+              className="flex items-center gap-2 mb-7"
             >
-              <MapPin size={15} className="text-muted-foreground" />
+              <MapPin
+                size={14}
+                className="text-muted-foreground shrink-0"
+              />
 
-              <span className="font-mono text-sm tracking-wide text-muted-foreground">
+              <span className="font-mono text-xs sm:text-sm tracking-wide text-muted-foreground">
                 Wakiso, Uganda · Remote Available
               </span>
             </motion.div>
@@ -175,11 +180,12 @@ export default function HeroSection() {
               transition={{ delay: 0.65 }}
               className="
                 max-w-xl
-                text-base
+                text-sm
+                sm:text-base
                 md:text-lg
                 leading-relaxed
                 text-muted-foreground
-                mb-12
+                mb-10
               "
             >
               Software engineer specializing in{" "}
@@ -195,7 +201,7 @@ export default function HeroSection() {
               <span className="text-primary font-semibold">
                 Farmsell
               </span>{" "}
-                an agri-marketplace serving East Africa   and run{" "}
+              — an agri-marketplace serving East Africa — and run{" "}
               <span className="text-primary font-semibold">
                 Tallen Tech
               </span>
@@ -210,35 +216,35 @@ export default function HeroSection() {
               className="
                 flex
                 flex-col
-                md:flex-row
-                flex-wrap
-                items-start
-                gap-4
-                mb-16
+                sm:flex-row
+                sm:flex-wrap
+                gap-3
+                sm:gap-4
+                mb-12
               "
             >
-              {/* PRIMARY */}
+              {/* VIEW WORK */}
               <a
                 href="https://farmsell.org/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="
                   group
-                  h-14
-                  px-7
-                  whitespace-nowrap
-                  rounded-full
+                  w-full
+                  sm:w-auto
+                  min-h-[52px]
+                  px-6
+                  rounded-2xl
                   bg-primary
                   text-primary-foreground
                   font-semibold
                   text-sm
-                  tracking-wide
                   flex
                   items-center
                   justify-center
                   gap-2
                   shadow-xl
                   hover:bg-primary/90
-                  hover:scale-[1.02]
-                  active:scale-[0.98]
                   transition-all
                   duration-300
                 "
@@ -248,23 +254,24 @@ export default function HeroSection() {
                 <ExternalLink
                   size={16}
                   className="
-                    group-hover:-translate-y-0.5
-                    group-hover:translate-x-0.5
                     transition-transform
+                    group-hover:translate-x-1
+                    group-hover:-translate-y-1
                   "
                 />
               </a>
 
-              {/* SECONDARY */}
+              {/* HIRE ME */}
               <a
                 href="https://wa.me/256777829813"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
-                  h-14
-                  px-7
-                  whitespace-nowrap
-                  rounded-full
+                  w-full
+                  sm:w-auto
+                  min-h-[52px]
+                  px-6
+                  rounded-2xl
                   border
                   border-white/10
                   bg-card/40
@@ -272,15 +279,12 @@ export default function HeroSection() {
                   text-foreground
                   font-semibold
                   text-sm
-                  tracking-wide
                   flex
                   items-center
                   justify-center
                   hover:border-primary/40
                   hover:text-primary
                   hover:bg-card/70
-                  hover:scale-[1.02]
-                  active:scale-[0.98]
                   transition-all
                   duration-300
                 "
@@ -295,25 +299,23 @@ export default function HeroSection() {
                 rel="noopener noreferrer"
                 className="
                   group
-                  h-14
-                  px-7
-                  whitespace-nowrap
-                  rounded-full
+                  w-full
+                  sm:w-auto
+                  min-h-[52px]
+                  px-6
+                  rounded-2xl
                   border
                   border-emerald-500/20
                   bg-emerald-500/5
                   text-emerald-400
                   font-semibold
                   text-sm
-                  tracking-wide
                   flex
                   items-center
                   justify-center
                   gap-2
                   hover:bg-emerald-500/10
                   hover:border-emerald-500/40
-                  hover:scale-[1.02]
-                  active:scale-[0.98]
                   transition-all
                   duration-300
                 "
@@ -332,31 +334,29 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1 }}
-              className="grid grid-cols-2 md:grid-cols-4 gap-4"
+              className="grid grid-cols-2 lg:grid-cols-4 gap-3"
             >
               {STATS.map((stat) => (
                 <div
                   key={stat.label}
                   className="
-                    group
                     bg-card/40
                     backdrop-blur-xl
                     border
                     border-white/5
-                    rounded-3xl
-                    px-6
-                    py-6
+                    rounded-2xl
+                    px-4
+                    py-5
                     hover:border-primary/30
-                    hover:-translate-y-1
                     transition-all
                     duration-300
                   "
                 >
-                  <div className="text-3xl font-black text-foreground">
+                  <div className="text-2xl sm:text-3xl font-black text-foreground">
                     {stat.value}
                   </div>
 
-                  <div className="mt-2 font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
+                  <div className="mt-2 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.15em] text-muted-foreground">
                     {stat.label}
                   </div>
                 </div>
@@ -369,10 +369,17 @@ export default function HeroSection() {
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            whileHover={{ y: -6 }}
-            className="relative hidden lg:flex justify-center"
+            className="
+              relative
+              flex
+              justify-center
+              order-1
+              lg:order-2
+              mb-6
+              lg:mb-0
+            "
           >
-            {/* OUTER GLOW */}
+            {/* GLOW */}
             <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full" />
 
             <div className="relative">
@@ -384,26 +391,29 @@ export default function HeroSection() {
                 className="
                   relative
                   z-10
-                  w-[380px]
+                  w-[240px]
+                  xs:w-[260px]
+                  sm:w-[320px]
+                  md:w-[360px]
                   xl:w-[430px]
-                  h-[500px]
+                  h-[300px]
+                  xs:h-[340px]
+                  sm:h-[420px]
+                  md:h-[470px]
                   xl:h-[560px]
                   object-cover
-                  object-[center_top]
-                  rounded-[32px]
+                  object-top
+                  rounded-[28px]
                   border
                   border-white/10
                   shadow-[0_20px_80px_rgba(0,0,0,0.6)]
                 "
               />
 
-              {/* DECORATIVE RING */}
-              <div className="absolute -inset-4 rounded-[36px] border border-primary/20" />
+              {/* RING */}
+              <div className="absolute -inset-3 sm:-inset-4 rounded-[32px] border border-primary/20" />
 
-              {/* EXTRA GLOW */}
-              <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-primary/20 rounded-full blur-3xl" />
-
-             
+              
             </div>
           </motion.div>
         </div>
