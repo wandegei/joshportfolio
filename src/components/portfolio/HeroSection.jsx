@@ -51,9 +51,9 @@ export default function HeroSection() {
       className="relative min-h-screen overflow-hidden bg-background"
     >
       {/* BACKGROUND GLOWS */}
-      <div className="absolute top-[-15%] left-[-10%] w-[40rem] h-[40rem] bg-primary/10 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-[-10%] left-[-10%] w-[35rem] h-[35rem] bg-primary/10 blur-[120px] rounded-full pointer-events-none" />
 
-      <div className="absolute bottom-[-20%] right-[-10%] w-[30rem] h-[30rem] bg-accent/10 blur-[100px] rounded-full pointer-events-none" />
+      <div className="absolute bottom-[-15%] right-[-10%] w-[28rem] h-[28rem] bg-accent/10 blur-[100px] rounded-full pointer-events-none" />
 
       {/* GRID */}
       <div
@@ -67,10 +67,11 @@ export default function HeroSection() {
         }}
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 md:px-8 pt-24 sm:pt-28 lg:pt-36 pb-20">
+      <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 pt-20 sm:pt-24 lg:pt-32 pb-20">
         <div className="grid lg:grid-cols-2 gap-14 xl:gap-24 items-center">
-          {/* LEFT SIDE */}
-          <div className="order-2 lg:order-1">
+
+          {/* TEXT CONTENT FIRST ON SMALL SCREENS */}
+          <div className="order-1 lg:order-1">
             {/* BADGE */}
             <motion.div
               initial={{ opacity: 0, y: -10 }}
@@ -92,7 +93,7 @@ export default function HeroSection() {
             >
               <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
 
-              <span className="font-mono text-[10px] sm:text-[11px] tracking-[0.15em] uppercase text-primary">
+              <span className="font-mono text-[10px] sm:text-[11px] tracking-[0.14em] uppercase text-primary">
                 Available for new projects
               </span>
             </motion.div>
@@ -106,16 +107,17 @@ export default function HeroSection() {
                 duration: 0.7,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="mb-6"
+              className="mb-5"
             >
               <h1
                 className="
                   leading-[0.9]
                   font-black
                   tracking-[-0.05em]
-                  text-[2.8rem]
-                  xs:text-[3.2rem]
-                  sm:text-[4.5rem]
+                  text-[2.5rem]
+                  xs:text-[2.8rem]
+                  sm:text-[4rem]
+                  md:text-[5rem]
                   lg:text-[6rem]
                 "
               >
@@ -129,19 +131,19 @@ export default function HeroSection() {
               </h1>
             </motion.div>
 
-            {/* ROLE */}
+            {/* TYPING ROLE */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.45 }}
-              className="mb-5 min-h-[32px]"
+              className="mb-5 min-h-[30px]"
             >
               <span
                 className="
                   font-mono
                   text-sm
                   sm:text-lg
-                  md:text-2xl
+                  md:text-xl
                   font-semibold
                   bg-gradient-to-r
                   from-primary
@@ -152,7 +154,7 @@ export default function HeroSection() {
               >
                 {displayed}
 
-                <span className="inline-block w-[2px] h-4 sm:h-5 md:h-6 bg-primary ml-1 animate-pulse align-middle" />
+                <span className="inline-block w-[2px] h-4 sm:h-5 bg-primary ml-1 animate-pulse align-middle" />
               </span>
             </motion.div>
 
@@ -168,7 +170,7 @@ export default function HeroSection() {
                 className="text-muted-foreground shrink-0"
               />
 
-              <span className="font-mono text-xs sm:text-sm tracking-wide text-muted-foreground">
+              <span className="font-mono text-xs sm:text-sm text-muted-foreground">
                 Wakiso, Uganda · Remote Available
               </span>
             </motion.div>
@@ -201,7 +203,7 @@ export default function HeroSection() {
               <span className="text-primary font-semibold">
                 Farmsell
               </span>{" "}
-              — an agri-marketplace serving East Africa — and run{" "}
+                an agri-marketplace serving East Africa   and run{" "}
               <span className="text-primary font-semibold">
                 Tallen Tech
               </span>
@@ -219,7 +221,6 @@ export default function HeroSection() {
                 sm:flex-row
                 sm:flex-wrap
                 gap-3
-                sm:gap-4
                 mb-12
               "
             >
@@ -232,18 +233,18 @@ export default function HeroSection() {
                   group
                   w-full
                   sm:w-auto
-                  min-h-[52px]
+                  h-12
                   px-6
                   rounded-2xl
                   bg-primary
                   text-primary-foreground
-                  font-semibold
                   text-sm
+                  font-semibold
                   flex
                   items-center
                   justify-center
                   gap-2
-                  shadow-xl
+                  shadow-lg
                   hover:bg-primary/90
                   transition-all
                   duration-300
@@ -252,7 +253,7 @@ export default function HeroSection() {
                 <span>View My Work</span>
 
                 <ExternalLink
-                  size={16}
+                  size={15}
                   className="
                     transition-transform
                     group-hover:translate-x-1
@@ -269,7 +270,7 @@ export default function HeroSection() {
                 className="
                   w-full
                   sm:w-auto
-                  min-h-[52px]
+                  h-12
                   px-6
                   rounded-2xl
                   border
@@ -277,14 +278,13 @@ export default function HeroSection() {
                   bg-card/40
                   backdrop-blur-xl
                   text-foreground
-                  font-semibold
                   text-sm
+                  font-semibold
                   flex
                   items-center
                   justify-center
                   hover:border-primary/40
                   hover:text-primary
-                  hover:bg-card/70
                   transition-all
                   duration-300
                 "
@@ -301,15 +301,15 @@ export default function HeroSection() {
                   group
                   w-full
                   sm:w-auto
-                  min-h-[52px]
+                  h-12
                   px-6
                   rounded-2xl
                   border
                   border-emerald-500/20
                   bg-emerald-500/5
                   text-emerald-400
-                  font-semibold
                   text-sm
+                  font-semibold
                   flex
                   items-center
                   justify-center
@@ -321,7 +321,7 @@ export default function HeroSection() {
                 "
               >
                 <Download
-                  size={16}
+                  size={15}
                   className="group-hover:animate-bounce"
                 />
 
@@ -356,7 +356,7 @@ export default function HeroSection() {
                     {stat.value}
                   </div>
 
-                  <div className="mt-2 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.15em] text-muted-foreground">
+                  <div className="mt-2 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.14em] text-muted-foreground">
                     {stat.label}
                   </div>
                 </div>
@@ -364,7 +364,7 @@ export default function HeroSection() {
             </motion.div>
           </div>
 
-          {/* RIGHT SIDE IMAGE */}
+          {/* IMAGE NOW COMES AFTER TEXT ON SMALL SCREENS */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
@@ -373,10 +373,8 @@ export default function HeroSection() {
               relative
               flex
               justify-center
-              order-1
+              order-2
               lg:order-2
-              mb-6
-              lg:mb-0
             "
           >
             {/* GLOW */}
@@ -391,13 +389,13 @@ export default function HeroSection() {
                 className="
                   relative
                   z-10
-                  w-[240px]
-                  xs:w-[260px]
+                  w-[220px]
+                  xs:w-[250px]
                   sm:w-[320px]
                   md:w-[360px]
                   xl:w-[430px]
-                  h-[300px]
-                  xs:h-[340px]
+                  h-[280px]
+                  xs:h-[320px]
                   sm:h-[420px]
                   md:h-[470px]
                   xl:h-[560px]
@@ -409,9 +407,6 @@ export default function HeroSection() {
                   shadow-[0_20px_80px_rgba(0,0,0,0.6)]
                 "
               />
-
-              {/* RING */}
-              <div className="absolute -inset-3 sm:-inset-4 rounded-[32px] border border-primary/20" />
 
               
             </div>
